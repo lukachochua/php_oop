@@ -42,3 +42,15 @@
 // make your code clean and more maintainable.
 // Always make sure that your class is not dependent on one provider/gateway/etc. Use OC for that.
 
+
+// Lessons I learned today: Value objects and mutability 8.
+// When you noticed yourself that you are passing more than one parameter to a function often, 
+// you might consider combining them in an object.
+// Mutability is when you can change something in a class. Immutability is well the opposite of Mutability.
+// Passing an object in a function or method is fun and powerful at the same time!
+
+//Lessons I learned today: Exceptions 9.
+// Exceptions are powerful way to avoid php code blowing up and making it understand what you want to do
+// and what not to do. Usually these comments are longer, but this is an exception.
+
+
