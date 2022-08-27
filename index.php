@@ -1,59 +1,6 @@
 <?php
 
-class Subscription
 
-{
-    /**
-     * @var Gateway
-     */
-
-    public function __construct(Gateway $gateway)
-    {
-       
-    }
-
-    public function create()
-    {
-        # code...
-    }
-
-    public function cancel()
-    {
-        # code...
-    }
-
-    public function invoice()
-    {
-        # code...
-    }
-
-    public function swap($newplan)
-    {
-        # code...
-    }
-}
-
-interface Gateway
-{
-    public function findCustomer();
-
-    public function findCustomerBySubscription();
-}
-
-class StripeGateway implements Gateway
-{
-    public function findCustomer()
-    {
-
-    }
-
-    public function findCustomerBySubscription()
-    {
-
-    }
-}
-
-new Subscription(new StripeGateway());
 
 
 // What I learned today: Classes 1.
@@ -90,7 +37,8 @@ new Subscription(new StripeGateway());
 // Private encapsulation restricts the usage of a property/method of a class to itself.
 // Protected encapsulation is the same as private but can be extended to the child/subclasses.
 
-// What I learned today:
+// What I learned today: Object Composition and Abstraction 7.
 // Object composition is just a fancy name for using another object to a class to 
 // make your code clean and more maintainable.
 // Always make sure that your class is not dependent on one provider/gateway/etc. Use OC for that.
+
